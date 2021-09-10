@@ -1,0 +1,12 @@
+local oldnc = nil
+--
+oldnc = hookmetamethod(game, "__namecall", function(self, ...)
+    local args = {...}
+    local method = getnamecallmethod()
+    if method == "FireServer" and tostring(self) == "remote name here" then
+        for i,v in pairs(args) do
+            print(i,v)
+        end
+    end
+    return oldnc(self, table.unpack(args))
+end)
