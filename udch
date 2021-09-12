@@ -1,16 +1,1 @@
-local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/lel69/hook/main/vapeuiverysexy")()local hook = loadstring(game:HttpGet("https://raw.githubusercontent.com/lel69/hook/main/hook"))()
-local win = lib:Window("Undetected Ws/Jp Changer",Color3.fromRGB(44, 120, 224), Enum.KeyCode.LeftAlt)local tab = win:Tab("Main")tab:Slider("WalkSpeed",16,500,0, function(t)
-game.Players.LocalPlayer.Character.Humanoid:AddGetHook("WalkSpeed",16)
-game.Players.LocalPlayer.Character.Humanoid:AddSetHook("WalkSpeed")
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
-end)tab:Slider("JumpPower",50,500,0, function(z)
-game.Players.LocalPlayer.Character.Humanoid:AddGetHook("JumpPower",50)
-game.Players.LocalPlayer.Character.Humanoid:AddSetHook("JumpPower")
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = z
-end)local settin = win:Tab("Settings")settin:Colorpicker("UI Color",Color3.fromRGB(44, 120, 224), function(t)
-lib:ChangePresetColor(Color3.fromRGB(t.R * 255, t.G * 255, t.B * 255))
-end)settin:Button("Delete Ui", function()
-game:GetService("CoreGui")["ui"]:Destroy();
-end)settin:Button("Credits", function()
-lib:Notification("Made by", "Boi#5676", "Close")
-end)
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/lel69/hook/main/vapeuiverysexy")()local hook = loadstring(game:HttpGet("https://raw.githubusercontent.com/lel69/hook/main/hook"))()local win = lib:Window("",Color3.fromRGB(44, 120, 224), Enum.KeyCode.LeftAlt)local tab = win:Tab("Main")tab:Slider("WalkSpeed",16,500,0, function(t)game.Players.LocalPlayer.Character.Humanoid:AddGetHook("WalkSpeed",16)game.Players.LocalPlayer.Character.Humanoid:AddSetHook("WalkSpeed")game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t end)tab:Slider("JumpPower",50,500,0, function(z)game.Players.LocalPlayer.Character.Humanoid:AddGetHook("JumpPower",50)game.Players.LocalPlayer.Character.Humanoid:AddSetHook("JumpPower")game.Players.LocalPlayer.Character.Humanoid.JumpPower = z end)local settin = win:Tab("Settings")settin:Colorpicker("UI Color",Color3.fromRGB(44, 120, 224), function(t)lib:ChangePresetColor(Color3.fromRGB(t.R * 255, t.G * 255, t.B * 255))end)settin:Button("Delete Ui", function()game:GetService("CoreGui")["ui"]:Destroy();end)settin:Button("Credits", function()lib:Notification("Made by", "Boi#5676", "Close")end)
